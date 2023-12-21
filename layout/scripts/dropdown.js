@@ -1,15 +1,12 @@
-document.querySelectorAll('.dropbtn').forEach(item => {
-  item.addEventListener('click', event => {
-    let dropdownContent = event.target.nextElementSibling;
-    if (dropdownContent.style.display === 'block') {
-      dropdownContent.style.display = 'none';
-    } else {
-      // 关闭其他所有打开的下拉菜单
-      document.querySelectorAll('.ant-menu').forEach(d => {
-        d.style.display = 'none';
-      });
-      // 打开当前下拉菜单
-      dropdownContent.style.display = 'block';
-    }
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.menu-title').forEach(function(title) {
+    title.addEventListener('click', function() {
+      var parentLi = this.parentNode;
+      if (parentLi.classList.contains('menu-item')) {
+        // 切换当前菜单项的展开/收起状态
+        parentLi.classList.toggle('open');
+      }
+    });
   });
 });
+
