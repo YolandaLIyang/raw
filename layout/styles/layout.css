@@ -259,10 +259,10 @@ input:focus, textarea:focus, *:required:focus{border-color:#003C68;}
 
 
 /* Rows */
-.row0{color:#888888; background-color:#F5F5F5;}
-.row1{color:#888888; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWO4fv36fwaiAE6VADi/BwmnRm9wAAAAAElFTkSuQmCC);/* Generate a pattern here: http://www.patternify.com */ background-color:#FFFFFF; border-color:#131E2B;}
-.row2{color:#888888; background-color:#FFFFFF; border-color:#D7D7D7;}
-.row3{color:#888888; background-color:#FFFFFF;}
+.row0{color:#333333; background-color:#F5F5F5;}
+.row1{color:#333333; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWO4fv36fwaiAE6VADi/BwmnRm9wAAAAAElFTkSuQmCC);/* Generate a pattern here: http://www.patternify.com */ background-color:#FFFFFF; border-color:#131E2B;}
+.row2{color:#333333; background-color:#FFFFFF; border-color:#D7D7D7;}
+.row3{color:#333333; background-color:#FFFFFF;}
 .row4{color:#D7D7D7; background-color:#253A54;}
 .row4 a{color:#FFFFFF; background-color:inherit;}
 .row5, .row5 a{color:#FFFFFF; background-color:#131E2B;}
