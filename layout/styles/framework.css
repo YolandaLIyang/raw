@@ -109,34 +109,49 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 
 /* Dropdown Menu Styles */
 --------------------------------------------------------------------------------------------------------------- */
-.ant-menu {
+.menu, .submenu {
   list-style: none;
   padding: 0;
-  background-color: #fff;
-  border-right: 1px solid #f0f0f0;
+  margin: 0;
 }
-  
-.ant-menu-item, .ant-menu-submenu-title {
-  padding: 8px 16px;
-  color: rgba(0, 0, 0, 0.65);
-  border-bottom: 1px solid #f0f0f0;
+
+.menu-title {
   cursor: pointer;
+  padding: 8px;
+  position: relative;
 }
-  
-.ant-menu-item:hover, .ant-menu-submenu-title:hover {
-  background-color: #f5f5f5;
+
+.arrow {
+  display: inline-block;
+  margin-right: 5px;
+  transition: transform 0.3s ease;
 }
-  
-.ant-menu-submenu {
-  border-bottom: none;
-}
-  
-.ant-menu-submenu .ant-menu {
+
+.submenu {
   display: none;
   padding-left: 20px;
 }
-  
-.ant-menu-submenu:hover .ant-menu {
+
+.submenu-title {
+  padding: 8px;
+  color: #999;
+  cursor: default;
+}
+
+.submenu-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.submenu-item:hover {
+  background-color: #f5f5f5;
+}
+
+.menu-item.open > .menu-title > .arrow {
+  transform: rotate(180deg);
+}
+
+.menu-item.open > .submenu {
   display: block;
 }
-  
+
