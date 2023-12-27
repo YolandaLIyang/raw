@@ -118,7 +118,7 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 
 .menu-item {
     cursor: pointer;
-    padding: 5px 0;
+    padding: 10px 0; /* 增加了菜单每一行之间的间距 */
 }
 
 .menu-title {
@@ -128,6 +128,7 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 
 .menu-icon {
     display: inline-block;
+    margin-right: 10px; /* 增加了三角形图标和文本之间的距离 */
     transition: transform 0.3s ease;
 }
 
@@ -138,7 +139,7 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 
 .sub-menu a {
     display: block;
-    color: darkgrey; /* Deep gray color for links */
+    color: #0044BB; /* 蓝色链接 */
     text-decoration: none;
     padding: 5px 0;
 }
