@@ -127,7 +127,7 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 }
 
 .menu-icon {
-    margin-right: 10px;
+    display: inline-block;
     transition: transform 0.3s ease;
 }
 
@@ -138,7 +138,7 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 
 .sub-menu a {
     display: block;
-    color: #003C9D; /* Deep gray color for links */
+    color: darkgrey; /* Deep gray color for links */
     text-decoration: none;
     padding: 5px 0;
 }
@@ -146,3 +146,4 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 .sub-menu a:hover {
     text-decoration: underline;
 }
+
