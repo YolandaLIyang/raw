@@ -110,15 +110,26 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 /* Dropdown Menu Styles */
 --------------------------------------------------------------------------------------------------------------- */
 /* 伸缩菜单样式 */
-.accordion-menu .menu-item {
-    position: relative;
-    cursor: pointer;
-    padding: 5px 0;
+.accordion-menu {
+    width: 5cm;
+    margin-left: 3cm;
+    font-family: Verdana, Geneva, sans-serif;
     color: black; /* 所有字体颜色改为黑色 */
 }
 
-/* 为可展开的菜单项添加箭头图标 */
-.accordion-menu .menu-title[data-target]::before {
+.menu-item {
+    cursor: pointer;
+    padding: 5px 0;
+    position: relative; /* 添加定位，以便于放置箭头 */
+}
+
+.menu-title {
+    display: flex;
+    align-items: center;
+}
+
+/* 添加箭头图标 */
+.menu-title::before {
     content: '';
     display: inline-block;
     width: 10px; /* 箭头宽度 */
@@ -126,18 +137,29 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
     border-left: 2px solid black; /* 左边框作为箭头 */
     border-bottom: 2px solid black; /* 底边框作为箭头 */
     position: absolute;
-    left: 8px; /* 调整箭头位置 */
+    left: 0; /* 箭头位置 */
     top: 50%;
     transform: translateY(-50%) rotate(45deg); /* 初始箭头方向 */
     transition: transform 0.3s ease;
 }
 
 /* 控制箭头方向 */
-.menu-item.open > .menu-title[data-target]::before {
+.menu-item.open > .menu-title::before {
     transform: translateY(-50%) rotate(-135deg); /* 展开时箭头方向 */
 }
 
 .sub-menu {
     display: none;
     padding-left: 20px;
+}
+
+.sub-menu a {
+    display: block;
+    color: black; /* 链接颜色改为黑色 */
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.sub-menu a:hover {
+    text-decoration: underline;
 }
