@@ -400,3 +400,14 @@ table a, #comments a{background-color:inherit;}
 	.font-x2{font-size:1.4rem;}
 	.font-x3{font-size:1.6rem;}
 }
+
+/* 主页文本调整 */
+.about-heading {
+    text-align: left; /* 左对齐 */
+    font-size: 24px; /* 字体大小 */
+}
+
+.about-text {
+    text-align: left; /* 左对齐 */
+    font-size: 18px; /* 字体大小 */
+}
