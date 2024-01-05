@@ -152,3 +152,11 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 .sidebar {
     min-height: 2500px;
 }
+
+/* Home email styles */
+--------------------------------------------------------------------------------------------------------------- */
+.email-link {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
