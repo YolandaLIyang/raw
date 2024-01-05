@@ -403,27 +403,32 @@ table a, #comments a{background-color:inherit;}
 
 
 /* 新增Flexbox和响应式设计样式 */
+
 .container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* 允许子元素在必要时换行 */
 }
 
 .sidebar {
-    flex: 1; /* 让侧边栏自适应宽度 */
-    min-height: 100px; /* 可以根据需要调整最小高度 */
+    flex: 0 0 200px; /* flex-grow, flex-shrink, flex-basis */
+    /* 保持侧边栏宽度固定，不随内容伸缩 */
 }
 
 .content {
-    flex: 3; /* 让内容区占据更多空间 */
+    flex: 1 0 60%; /* 调整内容区域的宽度 */
+    /* flex-grow: 1 允许内容区域在有可用空间时扩展 */
+    /* flex-shrink: 0 防止内容区域在空间不足时缩小 */
+    /* flex-basis: 60% 设置基础宽度 */
 }
 
 /* 响应式设计的媒体查询 */
 @media screen and (max-width: 750px) {
     .container {
-        flex-direction: column;
+        flex-direction: column; /* 小屏幕上垂直排列 */
     }
     .sidebar, .content {
-        flex: none;
-        width: 100%;
+        flex-basis: 100%; /* 小屏幕上侧边栏和内容区域宽度为100% */
+        max-width: 100%; /* 防止超出屏幕宽度 */
     }
 }
+
