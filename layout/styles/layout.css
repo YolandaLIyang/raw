@@ -401,13 +401,29 @@ table a, #comments a{background-color:inherit;}
 	.font-x3{font-size:1.6rem;}
 }
 
-/* 主页文本调整 */
-.about-heading {
-    text-align: left; /* 左对齐 */
-    font-size: 24px; /* 字体大小 */
+
+/* 新增Flexbox和响应式设计样式 */
+.container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.about-text {
-    text-align: left; /* 左对齐 */
-    font-size: 18px; /* 字体大小 */
+.sidebar {
+    flex: 1; /* 让侧边栏自适应宽度 */
+    min-height: 100px; /* 可以根据需要调整最小高度 */
+}
+
+.content {
+    flex: 3; /* 让内容区占据更多空间 */
+}
+
+/* 响应式设计的媒体查询 */
+@media screen and (max-width: 750px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar, .content {
+        flex: none;
+        width: 100%;
+    }
 }
