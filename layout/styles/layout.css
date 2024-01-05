@@ -33,7 +33,7 @@
 
 #pageintro *{margin:0 auto 50px; padding:0;}
 #pageintro .heading{font-size:46px; font-style:italic;}
-#pageintro p{max-width:50%; line-height:1.8;}
+#pageintro p{max-width:65%; line-height:1.8;}
 #pageintro footer{margin:0;}
 #pageintro .btn{margin:0; padding:15px 25px 17px;}
 
