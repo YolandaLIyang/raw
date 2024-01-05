@@ -149,12 +149,6 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
     text-decoration: underline;
 }
 
-/* 增加sidebar高度 */
---------------------------------------------------------------------------------------------------------------- */
-.sidebar {
-    min-height: 2800px;
-}
-
 
 /* Home email styles */
 --------------------------------------------------------------------------------------------------------------- */
@@ -162,4 +156,9 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
     text-decoration: underline;
     color: blue;
     cursor: pointer;
+}
+
+/* 添加新的.sidebar样式 */
+.sidebar {
+    min-height: 2800px;
 }
